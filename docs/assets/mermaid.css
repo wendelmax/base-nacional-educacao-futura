@@ -1,0 +1,37 @@
+.md-typeset .mermaid {
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Optional grid layout for pages with many diagrams */
+.md-typeset .mermaid-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 1100px) {
+  .md-typeset .mermaid-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.md-typeset .mermaid > svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+/* Provide a reasonable minimum height so diagrams are legible */
+.md-typeset .mermaid.flowchart svg,
+.md-typeset .mermaid.sequenceDiagram svg,
+.md-typeset .mermaid.gantt svg,
+.md-typeset .mermaid.classDiagram svg {
+  min-height: 600px;
+}
+
+/* Slightly larger text for better readability */
+.md-typeset .mermaid text {
+  font-size: 18px !important;
+}
+
+

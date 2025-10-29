@@ -1,0 +1,53 @@
+cursos:
+  engenharia:
+    pesos_gpa_area:
+      Matematica: 0.35
+      Ciencias: 0.25
+      Tecnologia: 0.20
+      Linguagens: 0.10
+      Cidadania: 0.05
+      Tecnico: 0.05
+    minimos:
+      creditos_total: 80
+      Matematica_gpa_min: 7.0
+      Ciencias_gpa_min: 6.5
+      Tecnologia_gpa_min: 6.5
+      Tecnico_creditos_relacionados: 8
+  direito:
+    pesos_gpa_area:
+      Linguagens: 0.40
+      Cidadania: 0.25
+      Matematica: 0.10
+      Ciencias: 0.05
+      Tecnologia: 0.10
+      Tecnico: 0.10
+    minimos:
+      creditos_total: 72
+      Linguagens_gpa_min: 7.0
+      Cidadania_gpa_min: 7.0
+  licenciaturas:
+    pesos_gpa_area:
+      Linguagens: 0.25
+      Matematica: 0.20
+      Ciencias: 0.20
+      Tecnologia: 0.15
+      Cidadania: 0.10
+      Tecnico: 0.10
+    minimos:
+      creditos_total: 72
+      estagio_min_creditos: 4
+  computacao:
+    pesos_gpa_area:
+      Tecnologia: 0.35
+      Matematica: 0.30
+      Ciencias: 0.15
+      Linguagens: 0.10
+      Tecnico: 0.10
+    minimos:
+      creditos_total: 80
+      Tecnologia_gpa_min: 7.0
+      Matematica_gpa_min: 7.0
+      microcerts_requeridas:
+        - dev_web_basico
+        - seguranca_basica
+

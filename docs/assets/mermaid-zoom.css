@@ -1,0 +1,20 @@
+#mermaid-zoom-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+#mermaid-zoom-modal.open { display: block; }
+#mermaid-zoom-modal .mz-backdrop {
+  position: absolute; inset: 0; background: rgba(0,0,0,0.7);
+}
+#mermaid-zoom-modal .mz-content {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: min(95vw, 1200px);
+  max-height: 90vh; overflow: auto; background: #fff; border-radius: 8px; padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+#mermaid-zoom-modal .mz-content svg { width: 100%; height: auto; }
+/* Focus outline for accessibility */
+#mermaid-zoom-modal .mz-content:focus { outline: 3px solid #1976d2; outline-offset: 4px; }
+

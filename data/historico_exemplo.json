@@ -1,0 +1,13 @@
+{
+  "estudante": {"id": "123", "nome": "Ana Souza"},
+  "creditos": [
+    {"componente": "Letramento e comunicação", "area": "Linguagens", "horas": 120, "creditos": 2, "gpa_item": 7.5},
+    {"componente": "Matemática aplicada", "area": "Matemática", "horas": 120, "creditos": 2, "gpa_item": 7.2},
+    {"componente": "Ciências e saúde", "area": "Ciências", "horas": 120, "creditos": 2, "gpa_item": 7.0},
+    {"componente": "Tecnologia fundamental", "area": "Tecnologia", "horas": 120, "creditos": 2, "gpa_item": 7.1}
+  ],
+  "gpa": {"geral": 7.2},
+  "portfolio": [{"url": "https://exemplo/artefato.pdf", "hash": "sha256:abc"}],
+  "assinatura": {"algoritmo": "ed25519", "chave_emissora": "PUBKEY", "assinatura": "SIG"}
+}
+

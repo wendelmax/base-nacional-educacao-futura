@@ -1,0 +1,91 @@
+site_name: Base Nacional Educação Futura — EM (4 anos)
+repo_url: https://github.com/wendelmax/base-nacional-educacao-futura
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: amber
+  favicon: assets/favicon.svg
+  logo: assets/favicon.svg
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - assets/mermaid-init.js
+  - assets/mermaid-zoom.js
+extra_css:
+  - assets/mermaid.css
+  - assets/mermaid-zoom.css
+  - assets/forms.css
+site_url: https://wendelmax.github.io/base-nacional-educacao-futura/
+plugins:
+  - search
+nav:
+  - Início: index.md
+  - Resumo Executivo: Resumo_Executivo.md
+  - Currículo:
+      - Matriz Curricular: curriculo/matriz_curricular.md
+      - Matriz de Competências (CSV): curriculo/matriz_competencias.csv
+      - Objetivos (YAML): curriculo/objetivos_por_ano_e_modulo.yaml
+      - Mapa de Itinerários: curriculo/mapa_itinerarios.md
+  - Planos e Rubricas:
+      - Gestão Financeira: 
+          - Plano: planos/plano_gestao_financeira_40h.md
+          - Rubrica: planos/rubrica_gestao_financeira.md
+      - Dev Web & Mobile:
+          - Plano: planos/plano_dev_web_mobile_120h.md
+          - Rubrica: planos/rubrica_dev_web_mobile.md
+      - Eletricidade:
+          - Plano: planos/plano_eletricidade_residencial_120h.md
+          - Rubrica: planos/rubrica_eletricidade_residencial.md
+      - Logística & Operações:
+          - Plano: planos/plano_logistica_operacoes_120h.md
+          - Rubrica: planos/rubrica_logistica_operacoes.md
+      - Culinária Profissional:
+          - Plano: planos/plano_culinaria_profissional_120h.md
+          - Rubrica: planos/rubrica_culinaria_profissional.md
+      - Agronegócio & Produção Sustentável:
+          - Plano: planos/plano_agronegocio_120h.md
+          - Rubrica: planos/rubrica_agronegocio.md
+      - HVAC:
+          - Plano: planos/plano_hvac_120h.md
+          - Rubrica: planos/rubrica_hvac.md
+      - Autonomia e Vida Independente:
+          - Plano: planos/plano_autonomia_vida_independente_120h.md
+          - Rubrica: planos/rubrica_autonomia_vida_independente.md
+  - Avaliação:
+      - Sistema de Créditos: avaliacao/sistema_creditos.md
+      - Esquema do Histórico JSON: avaliacao/schema_historico_json.md
+      - Equivalência ENEM/SiSU: avaliacao/conversao_enem_equivalencia.md
+      - Edital-Modelo: avaliacao/edital_modelo_universidades.md
+      - Pesos por Curso: avaliacao/pesos_por_curso.yaml
+      - Assinatura e Verificação: avaliacao/assinatura_verificacao.md
+      - Fluxo CSV→JSON→Assinatura: avaliacao/fluxo_csv_json_assinatura.md
+  - Implementação:
+      - Mapa: implementacao/mapa_implementacao.md
+      - Cronograma: implementacao/cronograma.md
+      - Custos: implementacao/custos_estimados.csv
+      - Piloto 90 dias: implementacao/piloto_90_dias.md
+      - Dashboard piloto: implementacao/dashboard_piloto.md
+      - Plano de Comunicação: implementacao/plano_comunicacao.md
+      - Checklists de Oficinas: implementacao/checklists_oficinas.md
+      - Importação Google Sheets: dados/google_sheets_import.md
+  - Referências: Referencias.md
+  - Gestores:
+      - Guia Rápido: gestores/guia_rapido.md
+  - Página 404: 404.md
+
